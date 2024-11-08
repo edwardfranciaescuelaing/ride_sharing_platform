@@ -142,7 +142,7 @@ sudo cp -r /home/ec2-user/ride_sharing_platform/front/* /usr/share/nginx/html/
 
 ```
 
-sudo nano /etc/nginx/sites-available/default
+sudo nano /etc/nginx/nginx.conf
 
 ```
 
