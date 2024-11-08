@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa con Coordenadas</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <h1>Mapa de Coordenadas</h1>
+    <div id="map" style="height: 400px;"></div>
+
+    <div>
+        <label for="origin-lat">Origen Latitud:</label>
+        <input type="text" id="origin-lat" readonly>
+        <label for="origin-lon">Origen Longitud:</label>
+        <input type="text" id="origin-lon" readonly>
+    </div>
+    
+    <div>
+        <label for="destination-lat">Destino Latitud:</label>
+        <input type="text" id="destination-lat" readonly>
+        <label for="destination-lon">Destino Longitud:</label>
+        <input type="text" id="destination-lon" readonly>
+        <button id="update-button">Actualizar</button>
+    </div>   
+
+    <div>
+        <label for="updated-latitude">Latitud Actualizada:</label>
+        <input type="text" id="updated-latitude" readonly>
+        <label for="updated-longitude">Longitud Actualizada:</label>
+        <input type="text" id="updated-longitude" readonly>
+    </div>
+
+</body>
+</html>
