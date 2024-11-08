@@ -23,7 +23,7 @@ Este documento proporciona una guía paso a paso para desplegar tu aplicación c
 
 La arquitectura que se implementa es la siguiente
 
-![image](https://github.com/user-attachments/assets/0ba2aa05-f223-432e-98d9-b4b150ad1e55)
+![image](https://github.com/user-attachments/assets/6066aeb7-dd2b-46ea-80d0-f46f4264b08b)
 
 - Primero se hace una división entre backend y frontend
 - El backend se realiza en java 17 generando un compilado con la clase RouteService que contiene la función UpdatePosition
@@ -31,7 +31,8 @@ La arquitectura que se implementa es la siguiente
 ![image](https://github.com/user-attachments/assets/18ef7cf3-3900-42ca-bb54-48dc3b94cf85)
 ![image](https://github.com/user-attachments/assets/ea3b1295-60f5-44c0-8fac-08984ae9a34a)
 - Seguido de esto se asocia un apigateway que disponibiliza la URI GET **/beta/coordinates/position**
-- Finalmente el front a travez de js consume la api con la ip generada desde el apigateway
+- El front a través de js consume la api con la ip generada desde el apigateway
+- El front esta disponible en un EC2 de aws el cual disponibiliza su servicio desde ngnix y habilitando un grupo de seguridad http en el puerto 80
 
 ## 1. Configuración del Backend en AWS Lambda y API Gateway
 
