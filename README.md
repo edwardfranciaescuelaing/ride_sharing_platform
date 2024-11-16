@@ -1,7 +1,7 @@
 
 # Despliegue de Aplicación Completa (Frontend en EC2, Backend en Lambda) en AWS
 
-Este documento proporciona una guía paso a paso para desplegar tu aplicación completa en AWS. El frontend se desplegará en una instancia EC2 y consumirá el backend desde una API Gateway que expone las funciones Lambda en AWS.
+Este documento proporciona una guía paso a paso para desplegar tu aplicación completa en AWS. El frontend se desplegará en una instancia EC2 y consumirá el backend desde una API Gateway que expone las funciones Lambda en AWS.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
 
 ## Índice
 
